@@ -1,0 +1,10 @@
+name: Simple-App
+version: 1
+formatVersion: 1
+inputs: {}
+resources:
+  Cloud_AWS_EC2_Instance_1:
+    type: Cloud.AWS.EC2.Instance
+    properties:
+      image: linux
+      flavor: small
