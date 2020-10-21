@@ -1,5 +1,5 @@
 name: Simple-App
-version: 2
+version: 4
 formatVersion: 1
 inputs: {}
 resources:
@@ -8,3 +8,4 @@ resources:
     properties:
       image: linux
       flavor: small
+      location: melbourne
