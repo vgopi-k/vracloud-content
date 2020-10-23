@@ -1,5 +1,5 @@
 name: Simple-App
-version: 6
+version: 7
 formatVersion: 1
 inputs: {}
 resources:
@@ -11,3 +11,4 @@ resources:
       location: melbourne
       suburb: Hawthorn
       street: Auburn Road
+      housenumber: 416
