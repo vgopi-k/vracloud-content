@@ -1,5 +1,5 @@
-name: Simple-App
-version: 7
+name: Simple Web
+version: 8
 formatVersion: 1
 inputs: {}
 resources:
@@ -12,3 +12,14 @@ resources:
       suburb: Hawthorn
       street: Auburn Road
       housenumber: 416
+      cloudConfig: |
+        #cloud-config
+        repo_update: true
+        repo_upgrade: all
+        packages:
+        - httpd
+        runcmd:
+        - service httpd start
+        - chkconfig httpd on
+        - cd /var/www/html
+        - echo "<html><h1>Hello Melbourne. This is Web Server Version 8</h1></html>"  >  index.html
