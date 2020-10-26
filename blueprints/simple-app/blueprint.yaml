@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 name: Simple Web Site
 version: 2
-=======
-name: Simple App
-version: 1
->>>>>>> c350f86011f49b560370be1095c384f564b2ee75
 formatVersion: 1
 inputs: {}
 resources:
