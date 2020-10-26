@@ -1,5 +1,5 @@
-name: Simple App
-version: 9
+name: Simple Web Site
+version: 1
 formatVersion: 1
 inputs: {}
 resources:
@@ -8,10 +8,6 @@ resources:
     properties:
       image: linux
       flavor: small
-      location: melbourne
-      suburb: Hawthorn
-      street: Auburn Road
-      housenumber: 416
       cloudConfig: |
         #cloud-config
         repo_update: true
