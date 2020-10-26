@@ -1,5 +1,5 @@
 name: Simple Web Site
-version: 5
+version: 6
 formatVersion: 1
 inputs: {}
 resources:
@@ -18,4 +18,4 @@ resources:
         - service httpd start
         - chkconfig httpd on
         - cd /var/www/html
-        - echo "<html><h1>Hello Melbourne. This is Version 5</h1> <img src='https://images.unsplash.com/photo-1545044846-351ba102b6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80'></html>"  >  index.html
+        - echo "<html><h1>Hello Melbourne. This is Version 6</h1> <img src='https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80'></html>"  >  index.html
