@@ -1,0 +1,21 @@
+name: Simple App
+version: 1
+formatVersion: 1
+inputs: {}
+resources:
+  Cloud_AWS_EC2_Instance_1:
+    type: Cloud.AWS.EC2.Instance
+    properties:
+      image: linux
+      flavor: small
+      cloudConfig: |
+        #cloud-config
+        repo_update: true
+        repo_upgrade: all
+        packages:
+        - httpd
+        runcmd:
+        - service httpd start
+        - chkconfig httpd on
+        - cd /var/www/html
+        - echo "<html><h1>Hello Melbourne. This is Version 9</h1> <img src="https://images.unsplash.com/photo-1545044846-351ba102b6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"></html>"  >  index.html
